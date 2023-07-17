@@ -115,14 +115,14 @@ def find_client(cur, first_name=None, last_name=None, email=None, phone=None):
 
 
 def all_clients(cur):
-        cur.execute("""
-            SELECT * FROM clients;
-            """)
-        print(cur.fetchall())
-        cur.execute("""
-            SELECT * FROM phones;
-            """)
-        print(cur.fetchall())
+    cur.execute("""
+        SELECT * FROM clients;
+        """)
+    print(cur.fetchall())
+    cur.execute("""
+        SELECT * FROM phones;
+        """)
+    print(cur.fetchall())
 
 
 if __name__ == '__main__':
