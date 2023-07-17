@@ -128,7 +128,7 @@ def all_clients(cur):
 if __name__ == '__main__':
     try:
         # пытаемся подключиться к базе данных
-        con = psycopg2.connect('jdbc:postgresql://localhost:5432/postgres')
+        con = psycopg2.connect(database="SQ", user="postgres", password="Denis2000gos")
     except:
         # в случае сбоя подключения будет выведено сообщение в STDOUT
         print('Can`t establish connection to database')
