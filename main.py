@@ -131,7 +131,7 @@ if __name__ == '__main__':
         con = psycopg2.connect(database="SQ", user="postgres", password="Denis2000gos")
     except:
         # в случае сбоя подключения будет выведено сообщение в STDOUT
-        print('Can`t establish connection to database')
+        print('Не удается установить подключение к базе данных')
 
     cursor = con.cursor()
     cursor.execute('SELECT * FROM users')
